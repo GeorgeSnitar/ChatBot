@@ -23,7 +23,7 @@
         </div>
         <div class="typing-field">
             <div class="input-data">
-                <input id="data" type="text" placeholder="Type something here.." required>
+                <input id="data" type="text" name="text" placeholder="Type something here.." required>
                 <button id="send-btn">Send</button>
             </div>
         </div>

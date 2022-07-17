@@ -9,7 +9,7 @@ class Database {
       private $error;
       
       //connect to the database
-      public function connect(){
+      public function __constructor(){
             try {
                   $conn = new PDO("mysql:host=".$this->servername.";dbname=".$this->dbname, $this->username, $this->password);
                   // set the PDO error mode to exception
@@ -21,10 +21,13 @@ class Database {
                 }
       }
      
-
-    
+      
+      //Prepare statement before execution
+      public function prepare($sql){
+            $this->stmt = $this->prepare($sql);
+      }
       //Execute the prepared statement
       public function execute($sql){
-            return execute($sql);
+            return $this->stmt->execute($sql);
       }
 }
