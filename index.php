@@ -7,6 +7,7 @@
       <title>Chatbot</title>
       <link rel="stylesheet" href="css/style.css"/>
       <script src="https://kit.fontawesome.com/5b7dcf3dd3.js" crossorigin="anonymous"></script>
+      <script src="js/ajax.js"></script>
 </head>
 <body>
 <div class="wrapper">
